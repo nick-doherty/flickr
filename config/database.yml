@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: flickr_demo_development
+  pool: 5
+  username: nick
+  host: localhost
+  password:
