@@ -3,6 +3,6 @@ development:
   encoding: unicode
   database: flickr_demo_development
   pool: 5
-  username: nickdoherty
+  username: nick
   host: localhost
   password:

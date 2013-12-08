@@ -1,11 +1,11 @@
 <p>
-  <%= link_to 'Search Again', root_path %>
-  <%= link_to 'Previous', "/search?query=#{params[:query]}&page=#{@page - 1}" unless @page <= 1 %>
-  <%= link_to 'Next', "/search?query=#{params[:query]}&page=#{@page + 1}" %><% @images.each do |image| %>
+  <%= link_to 'Search Again', root_path, class: "btn btn-warning" %>
 </p>
-  <%= image_tag FlickRaw.url_n image %>
+ <% @images.each do |image| %>
+  <%= image_tag FlickRaw.url_q image %>
 <% end %>
 <p>
-  <%= link_to 'Previous', "/search?query=#{params[:query]}&page=#{@page - 1}" unless @page <= 1 %>
-  <%= link_to 'Next', "/search?query=#{params[:query]}&page=#{@page + 1}" %>
+  <%= link_to 'Previous', "/search?query=#{params[:query]}&page=#{@page - 1}", class: "btn btn-info" unless @page <= 1 %>
+  <%= link_to 'Next', "/search?query=#{params[:query]}&page=#{@page + 1}", class: "btn btn-primary" %>
 </p>
+

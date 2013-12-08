@@ -1,8 +1,10 @@
-<h1>Flickr Scraper</h1>
+<div class="jumbotron">
+  <h1>Flickr search...</h1>
+  <p class="lead">Search Flickr for absolutely anything. See the very latest uploads from all over the world.</p>
+    <%= form_tag '/search', :method => 'get' do %>
+    <%= text_field_tag 'query' %>
+    <%= submit_tag 'Get photos!'  %>
+    <% end %>
+</div>
 
 <%== flash[:status] %>
-
-<%= form_tag '/search', :method => 'get' do %>
-  <%= text_field_tag 'query' %>
-  <%= submit_tag 'get photos' %>
-<% end %>
