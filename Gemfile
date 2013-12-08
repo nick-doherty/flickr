@@ -24,9 +24,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-debugger'
   gem 'pry-stack_explorer'
-
+  gem 'rspec-rails'
   gem 'annotate'
-
   gem 'quiet_assets'
   gem 'better_errors'
   # BetterErrors.editor = :sublime if defined? BetterErrors  (initializer)

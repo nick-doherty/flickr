@@ -19,7 +19,6 @@ class FlickrController < ApplicationController
   end
 end
 
-
 # http://www.flickr.com/services/api/misc.urls.html
 # http://www.flickr.com/services/api/flickr.photos.search.html
 # http://hanklords.github.io/flickraw/
