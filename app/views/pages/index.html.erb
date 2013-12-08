@@ -1,6 +1,8 @@
 <h1>Flickr Scraper</h1>
 
-<%= form_tag '/search' do %>
+<%== flash[:status] %>
+
+<%= form_tag '/search', :method => 'get' do %>
   <%= text_field_tag 'query' %>
   <%= submit_tag 'get photos' %>
 <% end %>
