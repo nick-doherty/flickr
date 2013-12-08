@@ -36,4 +36,4 @@ group :development, :test do
 end
 
 gem 'jquery-rails'
-ruby '2.0.0'
+ruby '1.9.3'
