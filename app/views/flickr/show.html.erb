@@ -1,4 +1,5 @@
 <p>
+  <%= link_to 'Search Again', root_path %>
   <%= link_to 'Previous', "/search?query=#{params[:query]}&page=#{@page - 1}" unless @page <= 1 %>
   <%= link_to 'Next', "/search?query=#{params[:query]}&page=#{@page + 1}" %><% @images.each do |image| %>
 </p>
