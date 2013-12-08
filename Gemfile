@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'pg', group: :production
+gem 'pg'
 gem 'carrierwave'
 gem 'fog', '~> 1.3.1' #require for carrierwave
 gem 'rails_12factor', group: :production
